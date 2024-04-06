@@ -14,7 +14,7 @@
         {/* Hero is placed outside Container to be full-width */}
         <Hero />
         <Box sx={{ mt: 4 }}>
-          <Container maxWidth="lg">
+          <Container maxWidth="xl">
             {/* Container confines these components to its maxWidth */}
             <AboutCard sx={{ my: 4 }} />
             <HAbout sx={{ my: 4 }} />
