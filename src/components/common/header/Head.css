@@ -1,0 +1,49 @@
+/* Head.css */
+.head {
+    position: fixed;
+    margin-top: -26px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100; /* Higher than AppBar's z-index to ensure it's on top */
+    background-color: transparent;
+    padding: 20px 0;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); Optional: adds shadow for depth */
+  }  
+  .container {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Keep logo and social icons apart */
+    align-items: center; /* Vertically center content */
+  }
+  
+  .logo h1 {
+    color: #1eb2a6; /* Primary color for brand name */
+    font-size: 2rem; /* Larger font size for emphasis */
+    margin-bottom: 5px; /* Space between brand name and tagline */
+  }
+  
+  .logo span {
+    color: #333; /* Subtle color for tagline */
+    font-size: 1rem;
+  }
+  
+  .social .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #1eb2a6; /* Icons use the primary color */
+    margin: 0 10px; /* Space between icons */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for hover */
+  }
+  
+  .social .icon:hover {
+    cursor: pointer;
+    background-color: #1eb2a6; /* Primary color on hover */
+    color: #fff; /* White text on hover */
+  }
+  

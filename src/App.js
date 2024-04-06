@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
+
+// Import MenuBar and other components
+import About from './components/about/About';
+import CourseHome from './components/allcourses/CourseHome';
+import Team from './components/team/Team';
+import Pricing from './components/pricing/Pricing';
+import Blog from './components/blog/Blog';
+import Contact from './components/contact/Contact';
+import Footer from './components/common/footer/Footer';
+import Home from './components/home/Home';
+import MenuBar from './MenuBar';
+import "./App.css"
+import Head from './components/common/header/Head';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Head/>
+        {/* Use MenuBar instead of AppBar */}
+        <MenuBar />
+
+        <Box sx={{ mt: '0px' }}> {/* Adjust marginTop if needed based on your MenuBar's height + specified marginTop */}
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/courses' element={<CourseHome />} />
+            <Route path='/team' element={<Team />} />
+            <Route path='/pricing' element={<Pricing />} />
+            <Route path='/journal' element={<Blog />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </Box>
+
+        <Footer />
+      </Router>
+    </>
   );
 }
 
