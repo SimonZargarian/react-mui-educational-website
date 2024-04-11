@@ -8,6 +8,9 @@ import Hero from "./hero/Hero";
 import Hprice from "./Hprice";
 import Testimonal from "./testimonal/Testimonal";
 import Awrapper from "../about/Awrapper"; // Make sure this path is correct
+import OnlineCourses from "../allcourses/OnlineCourses";
+import Newsletter from "./Newsletter";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -15,24 +18,19 @@ const Home = () => {
       {/* Hero is full-width */}
       <Hero />
 
-      <Box sx={{ mt: 4 }}>
-        {/* Container confines these components to its maxWidth except for Awrapper */}
-        <Container maxWidth="xl">
-          {/* AboutCard is inside the Container to adhere to the maxWidth */}
-          <AboutCard sx={{ my: 4 }} />
-        </Container>
+      {/* Container confines these components to its maxWidth */}
+      <Container maxWidth="xl">
+        <AboutCard sx={{ my: 4 }} />
+        <HAbout sx={{ my: 4 }} />
+        <Testimonal sx={{ my: 4 }} />
+        <OnlineCourses sx={{ my: 4 }} />
+        <Hblog sx={{ my: 4 }} />
+        <Hprice sx={{ my: 4 }} />
+      </Container>
 
-        {/* Awrapper placed here to ensure it's full-width and directly under AboutCard */}
-        <Awrapper />
-
-        <Container maxWidth="xl">
-          {/* Other components remain within Container for consistent maxWidth */}
-          <HAbout sx={{ my: 4 }} />
-          <Testimonal sx={{ my: 4 }} />
-          <Hblog sx={{ my: 4 }} />
-          <Hprice sx={{ my: 4 }} />
-        </Container>
-      </Box>
+      {/* Newsletter and Footer placed here to ensure they're full-width */}
+      <Newsletter />
+      <Footer />
     </>
   );
 };
