@@ -34,7 +34,7 @@ const Newsletter = () => {
             required
           />
           <Button type="submit" variant="contained" sx={{ bgcolor: 'white', color: '#1eb2a6', ml: 1 }}>
-            Update
+            Send
           </Button>
         </Box>
       </Box>

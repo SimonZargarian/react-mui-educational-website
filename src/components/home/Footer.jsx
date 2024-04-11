@@ -3,10 +3,24 @@ import { Container, Grid, Typography, Link, Box, IconButton } from '@mui/materia
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Footer = () => {
+  const linkStyle = {
+    color: 'inherit', 
+    display: 'flex', 
+    alignItems: 'center', 
+    textDecoration: 'none', 
+    '&:hover': { textDecoration: 'underline' },
+    '& .MuiSvgIcon-root': {
+      fontSize: '0.875rem',
+      mr: 0.5,
+      color: '#1eb2a6'
+    }
+  };
+
   return (
-    <Box sx={{ bgcolor: '#e0e0e0', color: 'text.primary', pt: 6, pb: 2, mt: 4, mt:0 }}>
+    <Box sx={{ bgcolor: '#e0e0e0', color: 'text.primary', pt: 6, pb: 2, mt: 0 }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
@@ -33,21 +47,21 @@ const Footer = () => {
             <Typography variant="h6" gutterBottom>
               Explore
             </Typography>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>About Us</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Services</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Courses</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Blog</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Contact us</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> About Us</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Services</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Courses</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Blog</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Contact us</Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
               Quick Links
             </Typography>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Contact Us</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Pricing</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Terms & Conditions</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Privacy</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block' }}>Feedbacks</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Contact Us</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Pricing</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Terms & Conditions</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Privacy</Link>
+            <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Feedbacks</Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>

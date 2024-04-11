@@ -5,7 +5,7 @@ import { coursesCard } from "../../dummydata";
 
 const CoursesCard = () => {
   return (
-    <Box sx={{ padding: '50px 0' }}>
+    <Box sx={{ padding: '50px 0', mt: 4 }}>
       <Grid container spacing={3}>
         {coursesCard.map((val) => (
           <Grid item xs={12} sm={6} md={4} key={val.id}>

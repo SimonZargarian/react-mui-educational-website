@@ -38,7 +38,10 @@ const MenuBar = () => {
           {/* Buttons */}
           <Button component={Link} to="/" sx={{ color: '#f0f0f0', marginRight: '20px' }}>Home</Button>
           <Button component={Link} to="/about" sx={{ color: '#f0f0f0', marginRight: '20px' }}>About</Button>
-          <Button component={Link} to="/services" sx={{ color: '#f0f0f0', marginRight: '20px' }}>Services</Button>
+          <Button component={Link} to="/courses" sx={{ color: '#f0f0f0', marginRight: '20px' }}>Courses</Button>
+          <Button component={Link} to="/team" sx={{ color: '#f0f0f0', marginRight: '20px' }}>Team</Button>
+          <Button component={Link} to="/pricing" sx={{ color: '#f0f0f0', marginRight: '20px' }}>Pricing</Button>
+          <Button component={Link} to="/journal" sx={{ color: '#f0f0f0', marginRight: '20px' }}>Journal</Button>
           <Button component={Link} to="/contact" sx={{ color: '#f0f0f0' }}>Contact</Button>
           <Button size="large"
             component={Link} to="/"
