@@ -23,10 +23,14 @@ const Home = () => {
         <AboutCard sx={{ my: 4 }} />
         <HAbout sx={{ my: 4 }} />
         <Testimonal sx={{ my: 4 }} />
+        </Container>
+        <Awrapper/>
+        <Container maxWidth="xl">
         <OnlineCourses sx={{ my: 4 }} />
         <Hblog sx={{ my: 4 }} />
         <Hprice sx={{ my: 4 }} />
-      </Container>
+        </Container>
+      
 
       {/* Newsletter and Footer placed here to ensure they're full-width */}
       <Newsletter />

@@ -41,8 +41,6 @@ const About = () => {
               At Academia, we are dedicated to making high-quality education accessible to everyone, everywhere. We believe that learning should be engaging, affordable, and adaptable to the needs of the modern student. Our mission is to empower learners of all ages with the tools and resources they need to succeed in their academic and personal growth journeys.
               <br /><br />
                 Our platform offers a wide range of courses and resources designed by experienced educators and industry experts. Whether you're a student looking to supplement your studies, a professional aiming to enhance your skills, or a lifelong learner curious about new subjects, our comprehensive and flexible learning options are tailored to meet your needs.
-                <br /><br />
-                We are committed to fostering a supportive learning environment that encourages curiosity, critical thinking, and innovation. Our interactive courses are designed to promote understanding and retention, featuring personalized learning paths, engaging multimedia content, and interactive assessments that help learners stay motivated and achieve their goals.
                 {/* Insert the rest of your text here */}
               </Typography>
             </CardContent>
@@ -63,8 +61,6 @@ const About = () => {
               Academia was founded by a group of passionate educators, technologists, and entrepreneurs who recognized the transformative potential of online education. Our team comprises people from diverse backgrounds and experiences, all united by a common goal: to democratize education and make it universally available.
               <br /><br />
               Our educators are seasoned professionals with deep expertise in their respective fields. They bring their real-world experience and a passion for teaching to each course they design. Meanwhile, our technology team works tirelessly to ensure that our platform is user-friendly, secure, and equipped with the latest advancements in educational technology.
-              <br /><br />
-              Together, we strive to create an online learning community where students can not only learn but also share their knowledge and experiences with peers from around the globe. Our support team is always ready to assist learners with any questions or challenges they might encounter, ensuring that everyone can make the most out of their educational journey with us.
                 {/* Insert additional text here */}
               </Typography>
             </CardContent>

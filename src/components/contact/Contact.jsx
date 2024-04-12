@@ -23,15 +23,15 @@ const Contact = () => {
         }}>
           Contact Us
         </Typography>
-      <Box sx={{ pt: '20px', pb: '20px' }}>
+      <Box sx={{ pt: '20px', pb: '20px', paddingLeft:"130px", paddingRight: "130px" }}>
         <Grid container spacing={2} sx={{ boxShadow: 3 }}>
-          <Grid item xs={12} md={6} sx={{ mt: 10 }}>
-            <iframe src={mapUrl} style={{ width: '100%', height: '650px', border: 0 }} loading="lazy"></iframe>
+          <Grid item xs={12} md={6} sx={{ mt: 3 }}>
+            <iframe src={mapUrl} style={{ width: '100%', height: '100%', border: 0 }} loading="lazy"></iframe>
           </Grid>
           {/* Paper component added here */}
-          <Grid item xs={12} md={6} sx={{ mt: 10 }}>
+          <Grid item xs={12} md={6} sx={{ mt: 3 }}>
             <Paper elevation={3} sx={{ p: 5 }}>
-            <Typography variant="h2" component="div" sx={{ color: '#1eb2a6', fontWeight: 'bold', mt: 13, textAlign: 'left', mt: 6, mb: 2, }}>
+            <Typography variant="h2" component="div" sx={{ color: '#1eb2a6', fontWeight: 'bold', mt: 13, textAlign: 'left', mt: 2, mb: 2, }}>
              Contact Us
           </Typography>              
           <Typography sx={{ color: 'grey' }}>We're open for any suggestion or just to have a chat</Typography>
