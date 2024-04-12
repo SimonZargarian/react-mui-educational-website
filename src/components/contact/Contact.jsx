@@ -5,23 +5,36 @@ import Newsletter from '../home/Newsletter';
 import Footer from '../home/Footer';
 
 const Contact = () => {
-  const mapUrl = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d904726.6131739549!2d85.24565535!3d27.65273865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1652535615693!5m2!1sen!2snp';
 
+  
+  const mapUrl = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!38.020571!2d85.24565535!-0.655188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1652535615693!5m2!1sen!2snp';
   return (
     <>
       <Back title='Contact us' />
       <img src={`${process.env.PUBLIC_URL}/images/back.webp`} alt="Banner" style={{ width: '100%', display: 'block', marginBottom: -30 }} />
+      <Typography variant="h2" component="div" sx={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          color: 'white', // Assuming the text is white for better visibility
+          textAlign: 'center',
+          fontWeight: 'bold',
+        }}>
+          Contact Us
+        </Typography>
       <Box sx={{ pt: '20px', pb: '20px' }}>
         <Grid container spacing={2} sx={{ boxShadow: 3 }}>
           <Grid item xs={12} md={6} sx={{ mt: 10 }}>
-            <iframe src={mapUrl} style={{ width: '100%', height: '450px', border: 0 }} loading="lazy"></iframe>
+            <iframe src={mapUrl} style={{ width: '100%', height: '650px', border: 0 }} loading="lazy"></iframe>
           </Grid>
           {/* Paper component added here */}
           <Grid item xs={12} md={6} sx={{ mt: 10 }}>
             <Paper elevation={3} sx={{ p: 5 }}>
             <Typography variant="h2" component="div" sx={{ color: '#1eb2a6', fontWeight: 'bold', mt: 13, textAlign: 'left', mt: 6, mb: 2, }}>
              Contact Us
-          </Typography>              <Typography sx={{ color: 'grey' }}>We're open for any suggestion or just to have a chat</Typography>
+          </Typography>              
+          <Typography sx={{ color: 'grey' }}>We're open for any suggestion or just to have a chat</Typography>
               
               <Box sx={{ display: 'grid', gridTemplateColumns: { sm: '1fr 1fr' }, gap: 2, my: 3 }}>
                 <Box>
