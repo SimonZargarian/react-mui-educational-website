@@ -6,16 +6,17 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Footer = () => {
+  // Custom styles for the links within the footer, including hover effects and icon styles
   const linkStyle = {
-    color: 'inherit', 
-    display: 'flex', 
-    alignItems: 'center', 
-    textDecoration: 'none', 
-    '&:hover': { textDecoration: 'underline' },
-    '& .MuiSvgIcon-root': {
-      fontSize: '0.875rem',
-      mr: 0.5,
-      color: '#1eb2a6'
+    color: 'inherit',  // Inherits the color from parent elements
+    display: 'flex', // Displays link items in a flex container
+    alignItems: 'center', // Vertically aligns items in the center
+    textDecoration: 'none', // No underline on the link by default
+    '&:hover': { textDecoration: 'underline' }, // Underlines the link on hover
+    '& .MuiSvgIcon-root': { // Targeting Material-UI icons within the link
+      fontSize: '0.875rem', // Sets a smaller icon size
+      mr: 0.5, // Adds right margin to space the icon from the text
+      color: '#1eb2a6' // Sets a custom color for the icon
     }
   };
 
@@ -34,19 +35,20 @@ const Footer = () => {
               A small river named Duden flows by their place and supplies it with the necessary regelialia.
             </Typography>
             <IconButton sx={{ color: '#1eb2a6' }} aria-label="facebook" component="span">
-              <FacebookIcon />
+              <FacebookIcon /> 
             </IconButton>
             <IconButton sx={{ color: '#1eb2a6' }} aria-label="twitter" component="span">
-              <TwitterIcon />
+              <TwitterIcon /> 
             </IconButton>
             <IconButton sx={{ color: '#1eb2a6' }} aria-label="instagram" component="span">
-              <InstagramIcon />
+              <InstagramIcon /> 
             </IconButton>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
               Explore
             </Typography>
+            {/* Using Link components with ArrowForwardIosIcon for navigational links */}
             <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> About Us</Link>
             <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Services</Link>
             <Link href="#" sx={linkStyle}><ArrowForwardIosIcon /> Courses</Link>
