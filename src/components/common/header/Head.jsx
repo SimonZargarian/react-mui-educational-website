@@ -1,5 +1,5 @@
 import React from "react";
-import "./Head.css"; // Import the specific CSS for the Head component
+import "./Head.css"; 
 
 const Head = () => {
   return (
@@ -7,7 +7,7 @@ const Head = () => {
       <div className="container flexSB">
         <div className="logo">
           <h1>ACADEMIA</h1>
-          <span style={{ color: 'white' }}>ONLINE EDUCATION & LEARNING</span>
+          <span style={{ color: "white" }}>ONLINE EDUCATION & LEARNING</span>
         </div>
         <div className="social">
           <i className="fab fa-facebook-f icon"></i>
